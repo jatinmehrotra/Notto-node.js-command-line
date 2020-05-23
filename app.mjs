@@ -1,17 +1,18 @@
-import fs from "fs";
 import {
-  addNotes
+  addNotes,
+  removeNotes
 } from "./utils.mjs";
 import validator from "validator";
 import chalk from "chalk";
 import yargs from "yargs";
+
 
 yargs.command({
   command: "add",
   describe: "To add a note!!!",
   builder: {
     title: {
-      describe: "To enter Title",
+      describe: "Enter Title of note which needs to be added",
       demandOption: true,
       type: "string",
     },
@@ -29,8 +30,16 @@ yargs.command({
 yargs.command({
   command: "remove",
   describe: "To remove a note!!!",
-  handler: function () {
-    console.log("note removed!!!");
+  builder: {
+    title: {
+      describe: "enter title of note which needs to be removed",
+      demandOption: true,
+      type: "string"
+    }
+  },
+  handler: function (argv) {
+    removeNotes(argv.title);
+
   },
 });
 

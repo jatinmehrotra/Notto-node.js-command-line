@@ -1,7 +1,6 @@
 import fs from "fs";
-import {
-    TIMEOUT
-} from "dns";
+import chalk from 'chalk';
+
 
 function loadNotes() {
     try {
@@ -32,6 +31,23 @@ let addNotes = function (title, body) {
     console.log(notesArray);
 
     saveNotes(notesArray);
+}
+let removeNotes = function (title) {
+    let notesArray = loadNotes();
+    let removednotesarray = notesArray.filter(function (note) {
+        return (note.title !== title);
+
+    });
+
+
+    if (notesArray.length == removednotesarray.length) {
+        console.log(chalk.red.bold.inverse("no note found"));
+    } else {
+        console.log(chalk.green.bold.inverse("note deleted"));
+    }
+    saveNotes(removednotesarray);
+
+
 
 }
 
@@ -42,5 +58,6 @@ let saveNotes = function (notesArray) {
 }
 
 export {
-    addNotes
+    addNotes,
+    removeNotes
 };
