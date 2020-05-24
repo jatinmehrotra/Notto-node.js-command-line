@@ -1,6 +1,7 @@
 import {
   addNotes,
-  removeNotes
+  removeNotes,
+  listNotes
 } from "./utils.mjs";
 import validator from "validator";
 import chalk from "chalk";
@@ -46,8 +47,8 @@ yargs.command({
 yargs.command({
   command: "list",
   describe: "To list all note!!!",
-  handler() {
-    console.log("Here is the listing!!!");
+  handler(argv) {
+    listNotes();
   },
 });
 
