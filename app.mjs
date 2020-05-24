@@ -1,7 +1,8 @@
 import {
   addNotes,
   removeNotes,
-  listNotes
+  listNotes,
+  readNote
 } from "./utils.mjs";
 import validator from "validator";
 import chalk from "chalk";
@@ -46,7 +47,7 @@ yargs.command({
 
 yargs.command({
   command: "list",
-  describe: "To list all note!!!",
+  describe: "To list all note with titles!!!",
   handler(argv) {
     listNotes();
   },
@@ -55,8 +56,15 @@ yargs.command({
 yargs.command({
   command: "read",
   describe: "To read a note!!!",
-  handler() {
-    console.log("here is the note!!!");
+  builder: {
+    title: {
+      type: 'string',
+      demandOption: true,
+      describe: 'enter title of note which is to be read'
+    }
+  },
+  handler(argv) {
+    readNote(argv.title);
   },
 });
 

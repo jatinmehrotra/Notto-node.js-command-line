@@ -15,8 +15,8 @@ let loadNotes = () => {
 
 let addNotes = (title, body) => {
     let notesArray = loadNotes();
-    let duplicatearray = notesArray.filter((note) => note.title === title);
-    if (duplicatearray.length > 0) {
+    let duplicateNote = notesArray.find(note => note.title === title);
+    if (duplicateNote) {
         console.log("its a duplicate note");
     } else {
         notesArray.push({
@@ -52,6 +52,17 @@ let listNotes = () => {
     });
 };
 
+let readNote = (title) => {
+    let notesArray = loadNotes();
+    let notetoberead = notesArray.find(note => note.title === title)
+    if (notetoberead === undefined) {
+        console.log(chalk.red.bold.inverse("No note Found!!!"));
+
+    } else {
+        console.log(chalk.yellow.bold('title:'), chalk.yellow.bold.inverse(notetoberead.title), "body:", notetoberead.body);
+    }
+}
+
 let saveNotes = (notesArray) => {
     let stringifiednote = JSON.stringify(notesArray);
     fs.writeFileSync("notes.json", stringifiednote);
@@ -60,5 +71,6 @@ let saveNotes = (notesArray) => {
 export {
     addNotes,
     removeNotes,
-    listNotes
+    listNotes,
+    readNote
 };
