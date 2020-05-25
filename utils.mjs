@@ -9,7 +9,7 @@ let loadNotes = () => {
         return parseddata;
     } catch (e) {
         return [];
-        ("");
+
     }
 };
 
@@ -63,6 +63,22 @@ let readNote = (title) => {
     }
 }
 
+let updateNote = (title, body) => {
+    let notesArray = loadNotes();
+    let originalNote = notesArray.find(note => note.title === title);
+    if (originalNote !== undefined) {
+        let updatedarray = notesArray.filter(note => note.title !== title);
+        updatedarray.push({
+            title: title,
+            body: body
+        });
+        saveNotes(updatedarray);
+        console.log("your original note was this " + 'title:' + chalk.green.bold(originalNote.title) + ' body:' + chalk.yellow.bold(originalNote.body))
+    } else {
+        console.log(chalk.red.bold.inverse("Given title does not exist, please run list command to verify your title"));
+    }
+}
+
 let saveNotes = (notesArray) => {
     let stringifiednote = JSON.stringify(notesArray);
     fs.writeFileSync("notes.json", stringifiednote);
@@ -72,5 +88,6 @@ export {
     addNotes,
     removeNotes,
     listNotes,
-    readNote
+    readNote,
+    updateNote
 };

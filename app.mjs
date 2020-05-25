@@ -2,7 +2,8 @@ import {
   addNotes,
   removeNotes,
   listNotes,
-  readNote
+  readNote,
+  updateNote
 } from "./utils.mjs";
 import validator from "validator";
 import chalk from "chalk";
@@ -66,6 +67,26 @@ yargs.command({
   handler(argv) {
     readNote(argv.title);
   },
+});
+
+yargs.command({
+  command: "update",
+  describe: "to update a note!!!",
+  builder: {
+    title: {
+      type: 'string',
+      demandOption: true,
+      describe: 'enter title of note which needs to be updated'
+    },
+    body: {
+      type: 'string',
+      demandOption: true,
+      describe: 'enter body of note which needs to be updated'
+    }
+  },
+  handler(argv) {
+    updateNote(argv.title, argv.body);
+  }
 });
 
 yargs.parse();
