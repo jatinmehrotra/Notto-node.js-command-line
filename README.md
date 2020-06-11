@@ -9,7 +9,7 @@ OS X & Linux & Windows:
 2. cd to/your/project/directory
 3. npm install
 
-## Usage example
+## Usage
 1. To Create/Add a note.
    *  node --experimental-modules app.mjs add --title='Hello' --body='Hello everyone'
 2. To Read a note.
@@ -28,7 +28,7 @@ OS X & Linux & Windows:
 
 
 
-## Meta
+## Licence & Author Info
 
 Your Name – Jatin Mehrotra  – jatinjmehrotra@gmail.com
 
