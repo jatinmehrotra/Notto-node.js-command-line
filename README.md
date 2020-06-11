@@ -34,5 +34,5 @@ Your Name – Jatin Mehrotra  – jatinjmehrotra@gmail.com
 
 Distributed under the XYZ license. See ``LICENSE`` for more information.
 
-[https://github.com/jatinmehrotra/respositories](https://github.com/jatinmehrotra)
+[https://github.com/jatinmehrotra/repositories](https://github.com/jatinmehrotra)
 
