@@ -30,7 +30,7 @@ OS X & Linux & Windows:
 
 ## Meta
 
-Your Name – Jatin Mehrotra  – jatinjmehrotra@gmail.com.com
+Your Name – Jatin Mehrotra  – jatinjmehrotra@gmail.com
 
 Distributed under the XYZ license. See ``LICENSE`` for more information.
 
