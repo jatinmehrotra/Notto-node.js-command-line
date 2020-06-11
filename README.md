@@ -12,15 +12,15 @@ OS X & Linux & Windows:
 
 ## Usage example
 1. To Create/Add a note.
-   *  node --experimental-modules app.mjs add --title='Hello' --body='Hello everyone'
+ *  node --experimental-modules app.mjs add --title='Hello' --body='Hello everyone'
 2. To Read a note.
-   *  node --experimental-modules app.mjs read --title='Hello'
+ *  node --experimental-modules app.mjs read --title='Hello'
 3. To Update a note
-   *  node --experimental-modules app.mjs update node --title='Hello World' --body='Hello World'
+ *  node --experimental-modules app.mjs update node --title='Hello World' --body='Hello World'
 4. T0 Delete a note
-   *  node --experimental-modules app.mjs remove --title='Hello World
+ *  node --experimental-modules app.mjs remove --title='Hello World
 5. To List all notes
-   *  node --experimental-modules app.mjs list
+ *  node --experimental-modules app.mjs list
 
 
 
