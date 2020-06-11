@@ -4,17 +4,25 @@ This repository contains a simple note-taking application that uses command-line
 ## Installation
 
 OS X & Linux & Windows:
-* Open terminal and enter these commands
+*  Open terminal and enter these commands
 
 1. git clone https://github.com/jatinmehrotra/Notes-node.js-command-line.git
 2. cd to/your/project/directory
 3. npm install
 
 ## Usage example
+1. To Create/Add a note.
+*  node --experimental-modules app.mjs add --title='Hello' --body='Hello everyone'
+2. To Read a note.
+*  node --experimental-modules app.mjs read --title='Hello'
+3. To Update a note
+*  node --experimental-modules app.mjs update node --title='Hello World' --body='Hello World'
+4. T0 Delete a note
+*  node --experimental-modules app.mjs remove --title='Hello World
+5. To List all notes
+*  node --experimental-modules app.mjs list
 
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
 
-_For more examples and usage, please refer to the [Wiki][wiki]._
 
 ## Development setup
 
