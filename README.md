@@ -1,13 +1,31 @@
 # Notto-node.js-command-line
 This repository contains a simple note-taking application that uses command-line arguments for CRUD operations concerning user given notes.
 
+## Table of Contents 
+
+> The  `README` contains the following info.
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Release History](#release-history)
+- [License And Author Info](#license-and-author-info)
+
 ## Installation
 OS X & Linux & Windows:
 *  Open terminal and enter these commands
 
-1. git clone https://github.com/jatinmehrotra/Notes-node.js-command-line.git
-2. cd to/your/project/directory
-3. npm install
+> Clone this repo to your local machine  
+
+```shell
+$ git clone `https://github.com/jatinmehrotra/Notes-node.js-command-line.git`
+```
+> Change Directory and install npm packages
+
+```shell
+$ cd to/your/project/directory
+$ npm install
+```
+
 
 ## Usage
 1. To Create/Add a note.
@@ -28,7 +46,7 @@ OS X & Linux & Windows:
 
 
 
-## License & Author Info
+## License And Author Info
 
 Jatin Mehrotra  – jatinjmehrotra@gmail.com
 
