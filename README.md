@@ -28,11 +28,11 @@ OS X & Linux & Windows:
 
 
 
-## Licence & Author Info
+## License & Author Info
 
-Your Name – Jatin Mehrotra  – jatinjmehrotra@gmail.com
+Jatin Mehrotra  – jatinjmehrotra@gmail.com
 
-Distributed under the XYZ license. See ``LICENSE`` for more information.
+Distributed under the GNU General Public License v3.0 license. See ``LICENSE`` for more information.
 
 [https://github.com/jatinmehrotra/repositories](https://github.com/jatinmehrotra)
 
