@@ -75,7 +75,7 @@ OS X & Linux & Windows:
 ```shell
   node --experimental-modules app.mjs read --title='Hello World'
 ```  
-![Read GIF](./images/Nott0_read_final.gif)
+![Read GIF](./images/Notto_read_final.gif)
 
 > To Update a note
 ```shell
