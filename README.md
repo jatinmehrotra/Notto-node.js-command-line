@@ -2,7 +2,7 @@
 
 This repository contains a **note-taking application** that uses command-line arguments for CRUD operations concerning user given notes.
 
-![Build](https://img.shields.io/badge/version-1.0.0-green) ![Issues](https://img.shields.io/github/issues/jatinmehrotra/Notto-node.js-command-line) ![License](https://img.shields.io/github/license/jatinmehrotra/Notto-node.js-command-line)
+![Made By](https://img.shields.io/badge/made%20by-Indononihonjin-red) ![buildpassing](https://img.shields.io/badge/build-passing-green) ![Vulnerabilities](https://img.shields.io/badge/vulnerabilties-0-lightgrey) ![coverage](https://img.shields.io/badge/coverage-100%25-brightgreen) ![node.js](https://img.shields.io/badge/node%40latest-%3E%3D6.0.0-orange) ![npm](https://img.shields.io/badge/npm-6.13.4-yellow) ![javascript](https://img.shields.io/badge/javascript-99.8%25-orange) ![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-blue)  <img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" > ![Build](https://img.shields.io/badge/version-1.0.0-green) ![Issues](https://img.shields.io/github/issues/jatinmehrotra/Notto-node.js-command-line) ![License](https://img.shields.io/github/license/jatinmehrotra/Notto-node.js-command-line) ![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) 
 
 
 ![Application Image](./images/Notto.png)
@@ -33,7 +33,7 @@ _Notto is synchronous, simple, lightweight and easy to use application which pro
 Before you continue, ensure you have met the following requirements:
 * You have installed the latest version of Node.js.
 * This Applicaion uses ES6 syntax, so make sure you use **_.mjs_** extension for your files. 
-* You need to mention **_ node --experimental-modules app.mjs ..._** for using Notto. See [Usage](#usage)
+* You need to mention _**node --experimental-modules app.mjs [options]...**_ for using Notto. See [Usage](#usage)
 
 
 
@@ -64,29 +64,36 @@ OS X & Linux & Windows:
 
 ## Usage
 
-> To Create/Add a note.
+> To Create/Add a note
 ```shell
   node --experimental-modules app.mjs add --title='Hello World' --body='Welcome To Notto'
 ```
-    
-> To Read a note.
+![Add GIF](./images/Notto_add.gif)
+   
+> To Read a note
+
 ```shell
   node --experimental-modules app.mjs read --title='Hello World'
 ```  
+![Read GIF](./images/Nott0_read_final.gif)
+
 > To Update a note
 ```shell
   node --experimental-modules app.mjs update --title='Hello World' --body='Notto is a great app'
 ```   
-> To Delete a note
+![Update GIF](./images/Notto_update.gif)
+
+> To Remove a note
 ```shell
   node --experimental-modules app.mjs remove --title='Hello World'
 ```  
+![Remove GIF](./images/Notto_remove_final.gif)
   
 > To List all notes
 ```shell
-  
-   *  node --experimental-modules app.mjs list
+  node --experimental-modules app.mjs list
 ``` 
+![List GIF](./images/Notto_list.gif)
 
 
 ## Release History
