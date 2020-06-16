@@ -11,7 +11,7 @@ This repository contains a **note-taking application** that uses command-line ar
 ## Table of Contents 
 
 > The  `README` contains the following info.
-- [General Info](#general-info)
+- [General Info & Features](#general-info)
 - [Prerequisites](#prerequisites)
 - [Built With](#built-with)
 - [Installation](#installation)
@@ -21,19 +21,24 @@ This repository contains a **note-taking application** that uses command-line ar
 
 
 
-## General Info
+## General Info & Features
 
-This application uses **Node.js** as a running environment and **Javascript** as its Programming language. It aims to illustrate the use of **command-line arguments,file-handling operations
-, use of modules through import and export(ES6 syntax), utilization of array, and its various method like filter and not the least error-handling through try and catch statements**.
+This application uses **Node.js** as a running environment and **Javascript** as its Programming language. It aims to illustrate the use of :- 
+
+* **command-line arguments**
+* **file-handling operations**
+* **use of modules through import and export(ES6 syntax)** 
+* **utilization of array, and its various method like filter** 
+* **Not the least error-handling through try and catch statements**
 
 _Notto is synchronous, simple, lightweight and easy to use application which provides a command-line interface to **create, read, update, remove notes given by the user through command line**_.
 
 ## Prerequisites
 
 Before you continue, ensure you have met the following requirements:
-* You have installed the latest version of Node.js.
-* This Applicaion uses ES6 syntax, so make sure you use **_.mjs_** extension for your files. 
-* You need to mention _**node --experimental-modules app.mjs [options]...**_ for using Notto. See [Usage](#usage)
+- [x] You have installed the latest version of Node.js.
+- [x] This Applicaion uses ES6 syntax, so make sure you use **_.mjs_** extension for your files. 
+- [x] You need to mention _**node --experimental-modules app.mjs [options]...**_ for using Notto. See [Usage](#usage)
 
 
 
@@ -52,7 +57,7 @@ OS X & Linux & Windows:
 > Clone this repo to your local machine  
 
 ```shell
-  git clone `https://github.com/jatinmehrotra/Notes-node.js-command-line.git`
+  git clone https://github.com/jatinmehrotra/Notes-node.js-command-line.git
 ```
 > Change Directory and install npm packages
 
